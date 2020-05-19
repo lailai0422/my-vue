@@ -2,6 +2,10 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
+    <template>
+      <el-radio v-model="radio" label="1">备选项</el-radio>
+      <el-radio v-model="radio" label="2">备选项</el-radio>
+    </template>
     <ul>
       <li>
         <a
@@ -88,7 +92,8 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Vue.js App of laichunyan  '
+      msg: 'Welcome to Vue.js App of laichunyan  ',
+      radio: '1'
     }
   }
 }
