@@ -6,6 +6,7 @@
       <el-radio v-model="radio" label="1">备选项</el-radio>
       <el-radio v-model="radio" label="2">备选项</el-radio>
     </template>
+    <User/>
     <ul>
       <li>
         <a
@@ -88,7 +89,11 @@
 </template>
 
 <script>
+import User from './User'
 export default {
+  components:{
+    User
+  },
   name: 'HelloWorld',
   data () {
     return {
